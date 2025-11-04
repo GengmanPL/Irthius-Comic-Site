@@ -1,0 +1,29 @@
+<div class="brand">
+	<div class="logo">
+		<img src="/images/aetherion.png"
+		style = "display: block; margin: auto; image-rendering: pixelated; width: 20px;"> <!--Image position-->
+	</div>
+	<div>
+		<h1>
+			<a href="/index.html">Home</a> | <a href="/index.html#overview">About</a> | <a href="/index.html#faq">FAQ</a> | © 2025
+		</h1>
+	</div>
+	
+	<style>
+		.brand{display:flex;align-items:center;}
+	</style>
+	
+	
+</div>
+<div class="music-bar">
+	<p id="track-info" style="padding-right: 20px;">Loading track...</p>
+	<audio id="music" controls autoplay loop style="width: 200px; height: 20px; right: 0px;">
+		<source id="music-source" src="" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	
+	<script>
+	  var audio = document.getElementById("music");
+	  audio.volume = 0.2;
+	</script>
+</div>
