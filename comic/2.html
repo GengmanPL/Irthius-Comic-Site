@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+    <title>Prologue - II | Irthius</title> <!--This is the title of the page that appears in the browser tab.-->
+    <link rel="stylesheet" href="../style.css"> <!--This links to the css (appearance) file.-->
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+	
+	<div class="topbar" style="position: sticky; top: 0"></div>
+    <div class="left-bar" style="background: linear-gradient(to bottom, #080F1F, #33527E);"></div>
+    <div class="right-bar" style="background: linear-gradient(to bottom, #080F1F, #33527E);"></div>
+
+    <div class="main-content">
+        <p style="font-family: 'Courier New', monospace;">II</p> <!--Page number at the very top.-->
+
+		<img src="../images/ren_camp.png"
+		style = "display: block; margin: auto; width:636px;height:423px; image-rendering: pixelated; border: 5px solid #555; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);"> <!--Image position-->
+
+		<!--These are the "containers" for your text. Make sure you number them in order!-->
+		<div id="text-container">
+			<p><i id="output_0"></i></p>
+			<p><i id="output_1"></i></p>
+			<p><i id="output_2"></i></p>
+			<p><b><u style="font-family: 'Courier New', monospace;" id="output_3"></u></b></p>
+			<div class="dialogue" id="output_4"></div>
+			<p><i id="output_5"></i></p>
+			<p><i id="output_6"></i></p>
+			<p><i id="output_7"></i></p>
+			<p><i id="output_8"></i></p>
+			<div class="dialogue" id="output_9"></div>
+			<div class="dialogue" id="output_10"></div>
+			<div class="dialogue" id="output_11"></div>
+			<p><i id="output_12"></i></p>
+			<p><i id="output_13"></i></p>
+			<p><i id="output_14"></i></p>
+			<p><i id="output_15"></i></p>
+			<p><i id="output_16"></i></p>
+			<p><i id="output_17"></i></p>
+		</div>
+		
+		<!-- This is the continue bar. DON'T TOUCH OR FORMAT. IT NEEDS TO BE EXACTLY LIKE THIS. (spaces count if you format it for some reason)-->
+		<div id="continue-bar" class="continue-bar" style="white-space: pre-wrap;"
+		><br />                                        
+- - - - - - -<span class="highlighted"> -</span><span class="highlighted continue-button"><a href="3.html">Continue</a></span><span class="highlighted">- </span>- - - - - - -
+<span class="grey-text"></span>                                         
+		</div>
+		<!--LINK NEXT SCENE NEXT TO THE HREF ^^-->
+		
+		<!--These are the links at the bottom of the page.-->
+        <div class="nav">
+		
+			<br />
+			<a href="javascript:window.history.back();">< Back</a> |
+			<a id="skipLink" href="#">Skip</a> |
+			<a href="3.html">Next ></a> <!--LINK NEXT SCENE HERE!-->
+			
+			
+        </div>
+		
+		<script>
+			// These are the messages that will be written into the containers above.
+			const messages = 
+			[
+				"A boy, by the name of <b>ALMI DERNO</b>, had lived here for as long as he could remember.",
+				"Yet, when he awoke, his surroundings gained an ethereal aura he hadn't seen before.",
+				"It was as if the ever-still place he had grown up in had completely changed overnight.",
+				"Almi",
+				"<span class='grey-text'><i>It's <u>still</u> night-time...</i></span>",
+				"Right.",
+				"...",
+				"Almi wore tattered clothes. Sometimes he found old clothes lying around, and sometimes, he found fresh ones, laying in the grass next to the great walls that enclosed the site.",
+				"He also wore his sandals which became worn-out over the years, and a symbolic, well-kept, green headband, one given to each Sylverde child once they become worthy of responsibility - usually at the age of 12.",
+				"<span class='grey-text'><i>\"As the rightful chief of our camp, I - Almi - have already declared myself as worthy many many moons ago!\"</i></span>",
+				"<span class='grey-text'><i>\"Though, I couldn't find the chief's headband...\"</i></span>",
+				"<span class='grey-text'><i>\"The second-in-command one is close enough! :)\"</i></span>",
+				"As per routine, he walked out into the lush, open grounds and made his way towards a staggering <b>OMNIA TEMPLE<b>.",
+				"Yawning as he walked down the rubbled, dirt-covered steps, a green orb of light flew out from within his tent towards him - an essence accompanying each member of the temple, called an <b>ELVEN SPIRIT<b>.",
+				"Together, they began to wander, illuminated by a violet nebula sprawling across the night sky.",
+				"Over the next few minutes, the spirit slowly manifested a ghostly, humanoid form, and about half-way to the temple, once the path was enclosed by trees, several more figures appeared in the shadows; hooded silhouettes draped in green.",
+				"The manifesting visions in the corner of his sight made sure to only be seen for a moment, for they disappeared once he glanced at them.",
+				"He began to walk quicker.",
+			];
+
+			// Indexes of lines that will wait for user input. Note that the last line of a page should NOT wait at all
+			const dialogueLines = [2, 4, 8, 11, 14, 16];
+		</script>
+		
+		<script src="../pageScript.js"></script> <!--main page handler-->
+		<script src="../elementLoad.js"></script>
+		
+		<script>
+			loadHTMLIntoElement('topbar', '../elements/topbar.html', {
+				audio: {
+					artist: 'Lena Raine',
+					trackName: 'Blank Canvas',
+					gameTitle: 'Chicory: A Colorful Tale',
+					src: '../music/blank_canvas.mp3',
+					volume: 0.2,
+				}
+			});
+		</script>
+
+		
+    </div>
+</body>
+</html>

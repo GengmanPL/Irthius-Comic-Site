@@ -1,0 +1,15 @@
+open command prompt
+
+paste this:
+cd C:\Users\skuba\Desktop\Irthius Site Comic
+
+paste this:
+python -m http.server --bind 127.0.0.1
+
+this will create a localhost server for the website.
+that last bit makes sure only you can access it.
+
+then go to http://localhost:8000 on your browser
+and navigate to the correct folder
+
+and kaboom! local host :)

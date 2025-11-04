@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+    <title>Prologue - I | Irthius</title> <!--This is the title of the page that appears in the browser tab.-->
+    <link rel="stylesheet" href="../style.css"> <!--This links to the css (appearance) file.-->
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+	<div class="topbar" style="position: sticky; top: 0"></div>	
+    <div class="left-bar"> </div>
+    <div class="right-bar"></div>
+
+    <div class="main-content">
+        <p style="font-family: 'Courier New', monospace;">Prologue - I</p> <!--Page number at the very top.-->
+
+		<img src="../images/mt_loemu.png"
+		style = "display: block; margin: auto; width:636px;height:423px; image-rendering: pixelated; border: 5px solid #555; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);"> <!--Image position-->
+
+		<!--These are the "containers" for your text. Make sure you number them in order!-->
+		<div id="text-container">
+			<p><i id="output_0"></i></p>
+			<p><i id="output_1"></i></p>
+			<p><i id="output_2"></i></p>
+			<p><i id="output_3"></i></p>
+			<p><i id="output_4"></i></p>
+			<p><i id="output_5"></i></p>
+			<p><i id="output_6"></i></p>
+		</div>
+		
+		<!-- This is the continue bar. DON'T TOUCH OR FORMAT. IT NEEDS TO BE EXACTLY LIKE THIS. (spaces count if you format it for some reason)-->
+		<div id="continue-bar" class="continue-bar" style="white-space: pre-wrap;"
+		><br />                                        
+- - - - - - -<span class="highlighted"> -</span><span class="highlighted continue-button"><a href="2.html">Continue</a></span><span class="highlighted">- </span>- - - - - - -
+<span class="grey-text"></span>                                         
+		</div>
+		<!--LINK NEXT SCENE NEXT TO THE HREF ^^-->
+		
+		<!--These are the links at the bottom of the page.-->
+        <div class="nav">
+			<br />
+			<a href="../index.html">Home</a> |
+			<a id="skipLink" href="#">Skip</a> |
+			<a href="2.html">Next ></a> <!--LINK NEXT SCENE HERE!-->
+        </div>
+		
+		<script>
+			// These are the messages that will be written into the containers above.
+			const messages = 
+			[
+			
+				"Standing near the summit of <b>MT. LOEMU</b>, the scattered remnants of a campsite sit dormantly.", 
+				"The remaining structures, hand-made and barely holding together, belonged to the <b>SYLVERDE</b> of <b>INULA</b>.",
+				"But it was not always this way, for many years ago, Sylverde villages on this mountain and its plateaus were poor, yes, but they kept themselves organised and their settlements clean.",
+				"They didn't need large houses of brick and stone. They survived <span class='grey-text'>and even thrived</span>, on nature alone.",
+				"Alas, this peace has been gone for quite a while now. Ever since the <b>HOLLOW EMBER</b> attacked Inula, it really hasn't been the same.",
+				"Any remaining Sylverde and their children took on new identities and haven't been seen since.",
+				"And yet! One still stood proud on the summit...",
+			];
+
+			// Indexes of lines that will wait for user input. Note that the last line of a page should NOT wait at all
+			const dialogueLines = [0, 3, 5];
+		</script>
+		
+		<script src="../pageScript.js"></script> <!--main page handler-->
+		<script src="../elementLoad.js"></script>
+		
+		<script>
+			loadHTMLIntoElement('topbar', '../elements/topbar.html', {
+				audio: {
+					artist: 'Lena Raine',
+					trackName: 'Blank Canvas',
+					gameTitle: 'Chicory: A Colorful Tale',
+					src: '../music/blank_canvas.mp3',
+					volume: 0.2,
+				}
+			});
+		</script>
+    </div>
+</body>
+</html>

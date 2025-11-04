@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+    <title>Irthius - Home</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+
+	<div class="topbar" style="position: sticky; top: 0"></div>
+
+    <div class="left-bar">
+	</div>
+    <div class="right-bar"></div>
+
+    <main class="main-content">
+	
+		<img src="/images/irthius_logo.png"
+		style = "display: block; margin: auto; width:308px;height:142px; image-rendering: pixelated; padding-bottom: 18px; padding-top: 30px;"> <!--Image position-->
+	
+        <p>Click <a href="/comic/1.html">here</a> to begin.</p>
+		<br /><br />
+
+		<div id="overview">
+			<p><h3>Welcome to Irthius!</h3>
+			Irthius is a collaborative fictional world-building project.
+			It began formally in ~2020, and follows the journeys of characters intertwined with the Darkfate Curse.
+			Essentially, Irthius poses the question of:
+			<br /><i>"What if our game experiences all took place in the same fictional universe?"</i></p>
+		</section>
+		
+		<div id="faq">
+			<h2>Does Irthius have a wiki?</h2>
+			<p><i>Yes!</i><br />Click <a href="https://trello.com/b/Jv123EOQ/irthius-lore">here</a> to go to the Irthius Trello Wiki. It needs a revamp though, since most information is outdated.
+		</div>
+		
+		<div id="pages">
+			<h2>Pages</h2>
+			<h3><a href="comic/1.html">Prologue</a></h3>
+			<a href="comic/1.html">I</a><br />
+			<a href="comic/2.html">II</a><br />
+			<a href="comic/3.html">III</a><br />
+			<h3><a href="comic/4.html">Chapter 1 - The Splitsoul</a></h3>
+			<a href="comic/4.html">I</a><br />
+		</div>
+		
+		<script src="elementLoad.js"></script>
+		
+		<script>
+			loadHTMLIntoElement('topbar', '/elements/topbar.html', {
+				audio: {
+					artist: 'Pascal Michael Stiefel',
+					trackName: 'Main Theme',
+					gameTitle: 'A Hat in Time',
+					src: '/music/main_theme.mp3',
+					volume: 0.2
+				}
+			});
+		</script>
+		
+		
+    </main>
+</body>
+</html>

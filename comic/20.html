@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2</title> <!--This is the title of the page that appears in the browser tab.-->
+    <link rel="stylesheet" href="../style.css"> <!--This links to the css (appearance) file.-->
+</head>
+<body>
+    <div class="big-left-bar" style="background-image: url('../images/stage_light.png');"> 
+	
+		<!--Link your images here-->
+	
+	</div>
+
+    <div class="main-content-right"> 
+        <i>II</i> <!--Page number at the very top.-->
+		
+		<!--These are the "containers" for your text. Make sure you number them in order!-->
+		<p><br /><i id="output_0"></i></p>
+		<p><br /><u id="output_1"></u></p>
+		<div class="dialogue" id="output_2"></div>
+		<p><br /><u id="output_3"></u></p>
+		<div class="dialogue" id="output_4"></div>
+		<p><br /><u id="output_5"></u></p>
+		<div class="dialogue" id="output_6"></div>
+		
+		<!-- This is the continue bar. DON'T TOUCH OR FORMAT. IT NEEDS TO BE EXACTLY LIKE THIS. (spaces count if you format it for some reason)-->
+		<div id="continue-bar" class="continue-bar" style="white-space: pre-wrap;"
+		><br />∧                                         
+5 - - - - - - -<span class="highlighted"> -</span><span class="highlighted continue-button"><a href="3.html">Continue</a></span><span class="highlighted">- </span>- - - - - - - X
+<span class="grey-text">∨</span>                                         
+		</div>
+		<!--LINK NEXT SCENE NEXT TO THE HREF ^^-->                                      
+		
+		<script>
+			// These are the messages that will be written into the containers above.
+			const messages = [
+				"The group gathers around the ritual site.", // 0
+				"Chris Crook", // 1
+				"So, this is the part where I explain to you in detail what's going to change your life henceforth.", // 2
+				"Rebecca", // 3
+				"You promised me alcoho- <i>Chris cuts her off</i>.", // 4 etc.
+				"Chris Crook",
+				"So I did, but if you haven't figured it out already <span class='grey-text'>and it seems that, you haven't,</span> this is not the time for that." 
+			];
+			// Indexes of lines that will wait for user input. Note that the last line of a page should NOT wait at all
+			const dialogueLines = [2, 4];
+		</script>
+		
+		<script src="../pageScript.js"></script> <!--main page handler-->
+
+		<!--These are the links at the bottom of the page.-->
+        <div class="nav">
+			<br />
+			<a href="../index.html">Home</a> |
+			<a href="../about.html">About</a> |
+			<a href="3.html">Skip Scene</a> <!--LINK NEXT PAGE HERE!-->
+        </div>
+    </div>
+</body>
+</html>

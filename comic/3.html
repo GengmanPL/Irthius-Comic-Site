@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+    <title>Prologue - III | Irthius</title> <!--This is the title of the page that appears in the browser tab.-->
+    <link rel="stylesheet" href="../style.css"> <!--This links to the css (appearance) file.-->
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+	<div class="topbar" style="position: sticky; top: 0"></div>
+
+    <div class="left-bar" style="background: linear-gradient(to bottom, #090E0A, #324237);"></div>
+    <div class="right-bar" style="background: linear-gradient(to bottom, #090E0A, #324237);"></div>
+
+    <div class="main-content">
+        <p style="font-family: 'Courier New', monospace;">III</p> <!--Page number at the very top.-->
+
+		<img src="../images/loemu_shrine_night.png"
+		style = "display: block; margin: auto; width:636px;height:423px; image-rendering: pixelated; border: 5px solid #555; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);"> <!--Image position-->
+
+		<div id="text-container">
+
+			<!--These are the "containers" for your text. Make sure you number them in order!-->
+			<p><i id="output_0"></i></p>
+			<p><i id="output_1"></i></p>
+			<p><i id="output_2"></i></p>
+			<p><i id="output_3"></i></p>
+			<p><i id="output_4"></i></p>
+			<p><i id="output_5"></i></p>
+			<p><b><u style="font-family: 'Courier New', monospace;" id="output_6"></u></b></p>
+			<div class="dialogue" id="output_7"></div>
+			<p><i id="output_8"></i></p>
+			<div class="dialogue" id="output_9"></div>
+			<div class="dialogue" id="output_10"></div>
+			<div class="dialogue" id="output_11"></div>
+			<div class="dialogue" id="output_12"></div>
+			<div class="dialogue" id="output_13"></div>
+			<div class="dialogue" id="output_14"></div>
+			<div class="dialogue" id="output_15"></div>
+			<div class="dialogue" id="output_16"></div>
+			<div class="dialogue" id="output_17"></div>
+			<div class="dialogue" id="output_18"></div>
+			<p><i id="output_19"></i></p>
+			<div class="dialogue" id="output_20"></div>
+			<div class="dialogue" id="output_21"></div>
+			<div class="dialogue" id="output_22"></div>
+			<div class="dialogue" id="output_23"></div>
+			<div class="dialogue" id="output_24"></div>
+			<div class="dialogue" id="output_25"></div>
+			<div class="dialogue" id="output_26"></div>
+			<div class="dialogue" id="output_27"></div>
+			<div class="dialogue" id="output_28"></div>
+			<div class="dialogue" id="output_29"></div>
+			<div class="dialogue" id="output_30"></div>
+		</div>
+		
+		<!-- This is the continue bar. DON'T TOUCH OR FORMAT. IT NEEDS TO BE EXACTLY LIKE THIS. (spaces count if you format it for some reason)-->
+		<div id="continue-bar" class="continue-bar" style="white-space: pre-wrap;"
+		><br />                                        
+- - - - - - -<span class="highlighted"> -</span><span class="highlighted continue-button"><a href="4.html">Continue</a></span><span class="highlighted">- </span>- - - - - - -
+<span class="grey-text"></span>                                         
+		</div>
+		<!--LINK NEXT SCENE NEXT TO THE HREF ^^-->
+
+		<!--These are the links at the bottom of the page.-->
+        <div class="nav">
+		
+			<br />
+			<a href="javascript:window.history.back();">< Back</a> |
+			<a id="skipLink" href="#">Skip</a> |
+			<a href="4.html">Next ></a> <!--LINK NEXT SCENE HERE!-->
+			
+			
+        </div>
+		
+		
+		
+		<script>
+			// These are the messages that will be written into the containers above.
+			const messages = 
+			[
+				"At last they made it to the temple. Omnia temples, like this one, are built from <b>LYTHELITE</b> - which looks similar to marble and quartz.",
+				"However, it looks more damaged than yesterday. Quite a <u>lot</u> more. He couldn't identify the marks left behind by whatever did this.",
+				"Before Almi could even reach the altar at the centre, he froze, unable to continue. His eyes widened.",
+				"And as the deafening howls of wind racing through the chambers grew louder, so too did the indecipherable whispers of the figures.",
+				"In response, Almi's breath quickened; shallower with each passing breath. His heart followed suit.",
+				"And before he could even say a wor-",
+				"???",
+				"Is it real... or is it not?",
+				"A cold hand touches Almi's shoulder...",
+				"We, nor you, know the answer to these questions.",
+				"So leave us be.",
+				"Beneath these trees; the familiar and the quaint.",
+				"Go. Seek the answers. Have no fear, for no matter how far the winds will carry you,",
+				"...and how scary the places you go will be,",
+				"Have faith in yourself.",
+				"I'll be right here alongside you!",
+				"Remember that.",
+				"...",
+				"Promise me that you'll be alright, will you?",
+				"Almi, after hesitating for a moment, closed his eyes and bowed his head.",
+				"I'm glad.",
+				"Go along and find it now. Someone special will be waiting for you.",
+				"Cleanse this world of its deeds, and in its place write your own story.",
+				"But at the end of it all,",
+				"Remember the earth,",
+				"and us.",
+				"Lo-",
+			];
+
+			// Indexes of lines that will wait for user input. Note that the last line of a page should NOT wait at all
+			const dialogueLines = [1, 2, 7, 16, 29];
+		</script>
+		
+		<script src="../pageScript.js"></script> <!--main page handler-->
+		<script src="../elementLoad.js"></script>
+		
+		<script>
+			loadHTMLIntoElement('topbar', '../elements/topbar.html', {
+				audio: {
+					artist: 'Nightmargin',
+					trackName: 'Someplace I Know',
+					gameTitle: 'Oneshot',
+					src: '../music/someplace_i_know.mp3',
+					volume: 0.3,
+				}
+			});
+		</script>
+
+
+    </div>
+</body>
+</html>
